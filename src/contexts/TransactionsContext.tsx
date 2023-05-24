@@ -3,7 +3,7 @@ import { createContext } from 'use-context-selector';
 
 import { api } from '../lib/axios';
 
-interface Transactions {
+export interface Transactions {
     id: number;
     description: string;
     type: 'income' | 'outcome';

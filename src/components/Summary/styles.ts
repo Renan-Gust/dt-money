@@ -12,9 +12,24 @@ export const SummaryContent = styled.div`
     margin-top: -5rem;
     padding: 0 1.5rem;
 
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 2rem;
+
+    .swiper{
+        width: 100%;
+    }
+
+    @media(min-width: 320px){
+        .swiper-slide {
+            width: 280px;
+        }
+    }
+
+    @media(min-width: 1024px){
+        .swiper-slide {
+            width: 336px;
+        }
+    }
 `;
 
 export const SummaryCard = styled.div<{ variant?: 'green' }>`

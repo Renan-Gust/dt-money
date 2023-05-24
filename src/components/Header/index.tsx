@@ -4,13 +4,13 @@ import { NewTransactionModal } from '../NewTransactionModal';
 
 import { HeaderContainer, HeaderContent, NewTransactionButton } from './styles';
 
-// import logoImg from '../../assets/logo.svg';
+import logoImg from '../../../public/logo.svg';
 
 export function Header() {
     return(
         <HeaderContainer>
             <HeaderContent>
-                {/* <img src={logoImg} alt="" /> */}
+                <img src={logoImg} alt="" />
 
                 <Dialog.Root>
                     <Dialog.Trigger asChild>

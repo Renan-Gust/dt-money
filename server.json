@@ -47,6 +47,46 @@
       "type": "outcome",
       "createdAt": "2023-05-24T15:36:26.209Z",
       "id": 6
+    },
+    {
+      "description": "Teclado",
+      "price": 189,
+      "category": "Setup",
+      "type": "outcome",
+      "createdAt": "2023-05-25T15:46:36.689Z",
+      "id": 7
+    },
+    {
+      "description": "Mouse",
+      "price": 59,
+      "category": "Setup",
+      "type": "outcome",
+      "createdAt": "2023-05-25T15:46:47.728Z",
+      "id": 8
+    },
+    {
+      "description": "Açaí",
+      "price": 15,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2023-05-25T17:19:48.919Z",
+      "id": 9
+    },
+    {
+      "description": "Salário",
+      "price": 1200,
+      "category": "Salário",
+      "type": "income",
+      "createdAt": "2023-05-25T17:20:14.225Z",
+      "id": 10
+    },
+    {
+      "description": "Short",
+      "price": 40,
+      "category": "Roupas",
+      "type": "outcome",
+      "createdAt": "2023-05-25T17:29:39.704Z",
+      "id": 11
     }
   ]
 }

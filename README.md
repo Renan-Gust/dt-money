@@ -54,10 +54,10 @@ $ npm install
 
 # Iniciar o projeto
 $ npm run dev
-```
 
 # Iniciar o json-server
 $ npm run dev:server
+```
 
 O app estará disponível no seu browser pelo endereço http://127.0.0.1:5173.
 

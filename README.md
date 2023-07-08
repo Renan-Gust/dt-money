@@ -24,7 +24,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React Hook Form](https://react-hook-form.com/)
 - [Radix](https://www.radix-ui.com/)
 - [Zod](https://zod.dev/)
-- [Swiper](ttps://swiperjs.com/)
+- [Swiper](https://swiperjs.com/)
 
 ## 🚀 Como executar
 

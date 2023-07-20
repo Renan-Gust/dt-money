@@ -6,7 +6,6 @@
   "main": "api/server.ts",
   "scripts": {
     "dev": "vite",
-    "dev:server": "json-server server.json -w -d 500",
     "start": "node api/server.ts",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",

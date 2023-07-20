@@ -39,31 +39,27 @@
 // // Export the Server API
 // module.exports = server;
 
-const { exec } = require('child_process');
 const jsonServer = require('json-server');
 const path = require('path');
 
-// Caminho para a pasta 'dist' onde o Vite irá gerar o build
-const viteBuildPath = path.join(__dirname, 'dist');
-
-// Inicie o servidor Vite
-const viteProcess = exec('vite build && vite preview', { cwd: viteBuildPath });
-
-// Inicie o json-server
-const jsonServerProcess = jsonServer.create();
+const server = jsonServer.create();
 const router = jsonServer.router('server.json');
 const middlewares = jsonServer.defaults();
 
-jsonServerProcess.use(middlewares);
-jsonServerProcess.use('/api', router);
+const port = process.env.PORT || 5000;
 
-const PORT = process.env.PORT || 5000;
-jsonServerProcess.listen(PORT, () => {
-    console.log(`JSON Server is running on port ${PORT}`);
+server.use(middlewares);
+server.use('/api', router);
+
+// Certifique-se de que o caminho para a pasta de saída do Vite esteja correto
+const viteBuildPath = path.join(__dirname, 'dist');
+
+// Defina a rota raiz para o servidor Vite
+server.use(jsonServer.static(viteBuildPath));
+server.use('*', (req, res) => {
+    res.sendFile(path.join(viteBuildPath, 'index.html'));
 });
 
-// Finalize os processos Vite e json-server ao final do script
-process.on('SIGINT', () => {
-    viteProcess.kill('SIGINT');
-    jsonServerProcess.close();
+server.listen(port, () => {
+    console.log(`JSON Server and Vite App are running on port ${port}`);
 });

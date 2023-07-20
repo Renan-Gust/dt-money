@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "src/api/server.ts",
   "scripts": {
     "dev": "vite",
     "dev:server": "json-server server.json -w -d 500",
+    "start": "node src/api/server.ts",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -27,6 +29,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/node": "^20.4.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.6",

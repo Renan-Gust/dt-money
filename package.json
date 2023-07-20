@@ -2,7 +2,7 @@
   "name": "dt-money",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "dev:server": "json-server server.json -w -d 500",
@@ -16,7 +16,6 @@
     "@radix-ui/react-radio-group": "^1.1.2",
     "@types/styled-components": "^5.1.26",
     "axios": "^1.4.0",
-    "concurrently": "^8.2.0",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

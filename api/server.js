@@ -16,5 +16,3 @@ server.listen(3000, () => {
 
 // Export the Server API
 module.exports = server;
-
-// "dev:server": "json-server server.json -w -d 500",

@@ -3,10 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "api/server.ts",
+  "main": "api/server.js",
   "scripts": {
     "dev": "vite",
-    "start": "node api/server.ts",
+    "dev:server": "json-server server.json -w -d 500",
+    "start": "node api/server.js",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"

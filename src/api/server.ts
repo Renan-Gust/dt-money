@@ -51,7 +51,7 @@ const viteProcess = exec('vite build && vite preview', { cwd: viteBuildPath });
 
 // Inicie o json-server
 const jsonServerProcess = jsonServer.create();
-const router = jsonServer.router('db.json');
+const router = jsonServer.router('server.json');
 const middlewares = jsonServer.defaults();
 
 jsonServerProcess.use(middlewares);

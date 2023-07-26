@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createdAt": "2023-05-24T12:04:50.980Z"
+      "createdAt": "2023-07-24T12:04:50.980Z"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 50,
-      "createdAt": "2023-05-23T12:04:50.980Z"
+      "createdAt": "2022-12-23T12:04:50.980Z"
     },
     {
       "id": 3,
@@ -87,6 +87,22 @@
       "type": "outcome",
       "createdAt": "2023-05-25T17:29:39.704Z",
       "id": 11
+    },
+    {
+      "description": "GALG11",
+      "price": 9,
+      "category": "Investimento",
+      "type": "outcome",
+      "createdAt": "2023-07-26T21:58:28.191Z",
+      "id": 12
+    },
+    {
+      "description": "Salário",
+      "price": 600,
+      "category": "Salário",
+      "type": "income",
+      "createdAt": "2023-07-26T21:59:07.254Z",
+      "id": 13
     }
   ]
 }

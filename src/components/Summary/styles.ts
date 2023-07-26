@@ -5,11 +5,30 @@ export const SummaryContainer = styled.section`
     padding: 2.5rem 0 7.5rem;
 `;
 
+export const Filter = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 1.875rem;
+
+    width: 100%;
+    max-width: 1120px;
+    margin-inline: auto;
+    margin-bottom: 2.5rem;
+    padding: 0px 1.5rem;
+
+    span{
+        font-weight: bold;
+    }
+
+    svg{
+        cursor: pointer;
+    }
+`;
+
 export const SummaryContent = styled.div`
     width: 100%;
     max-width: 1120px;
-    margin: 0 auto;
-    margin-top: -5rem;
+    margin-inline: auto;
     padding: 0 1.5rem;
 
     display: flex;

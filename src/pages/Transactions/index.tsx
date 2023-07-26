@@ -8,17 +8,18 @@ import { Summary } from '../../components/Summary';
 import { Transaction } from '../../components/Transaction';
 import { TransactionsContext } from '../../contexts/TransactionsContext';
 import { dateFormatter, priceFormatter } from '../../utils/formatter';
-import { transactionsPerPage, registersPerPage } from '../../utils/transactionsPerPage';
+import { registersPerPage, transactionsPerPage } from '../../utils/transactionsPerPage';
 
 import { PriceHighLight, TransactionsContainer, TransactionContainer, TransactionsTable } from './styles';
 
 export function Transactions() {
     const [page, setPage] = useState(1);
 
-    const transactions = useContextSelector(TransactionsContext, (context) => {
-        return context.transactions;
+    const context = useContextSelector(TransactionsContext, (context) => {
+        return context;
     });
-    const total = transactionsPerPage(page, transactions);
+
+    const total = transactionsPerPage(page, context.transactions);
 
     return(
         <div>
@@ -53,7 +54,7 @@ export function Transactions() {
                 </TransactionsTable>
 
                 <Pagination
-                    totalCountOfRegisters={transactions.length}
+                    totalCountOfRegisters={context.transactions.length}
                     registersPerPage={registersPerPage}
                     currentPage={page}
                     onPageChange={setPage}
